@@ -14,6 +14,7 @@ import { MobileNavContent } from "components/mobile-nav";
 import { useDisclosure, useUpdateEffect } from "@chakra-ui/react";
 
 import ThemeToggle from "./theme-toggle";
+import { NavBox } from "components/nav-link/nav-box";
 
 const Navigation: React.FC = () => {
   const mobileNav = useDisclosure();

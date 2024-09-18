@@ -93,51 +93,58 @@ const HeroSection: React.FC = () => {
         <Stack direction="column" alignItems="center">
           <Hero
             id="home"
-            justifyContent="flex-start"
-            px="0"
-            title={
-              <FallInPlace>
-                Build intuitive apps that your customers will love
-              </FallInPlace>
-            }
+            justifyContent="center"
+            title={<FallInPlace>Build beautiful software faster</FallInPlace>}
             description={
               <FallInPlace delay={0.4} fontWeight="medium">
-                Saas UI is a <Em>React component library</Em> and{" "}
-                <Em>starter kit</Em>
-                <Br /> that doesn't get in your way and helps you <Br /> build
-                intuitive SaaS products with speed.
+                We design, develop & deploy across the tech stack, maximizing
+                your software development project team with expert technical
+                talent. Get in touch regarding your next software or web
+                development project!
               </FallInPlace>
             }
           >
             <FallInPlace delay={0.8}>
-              <HStack pt="4" pb="12" spacing="8">
+              <Stack
+                justifyContent="center"
+                pt="4"
+                direction={"row"}
+                alignItems={"center"}
+                pb="12"
+                spacing="8"
+              >
                 <NextjsLogo height="28px" /> <ChakraLogo height="20px" />
-              </HStack>
-
-              <ButtonGroup spacing={4} alignItems="center">
-                <ButtonLink colorScheme="primary" size="lg" href="/signup">
-                  Sign Up
-                </ButtonLink>
-                <ButtonLink
-                  size="lg"
-                  href="https://demo.saas-ui.dev"
-                  variant="outline"
-                  rightIcon={
-                    <Icon
-                      as={FiArrowRight}
-                      sx={{
-                        transitionProperty: "common",
-                        transitionDuration: "normal",
-                        ".chakra-button:hover &": {
-                          transform: "translate(5px)",
-                        },
-                      }}
-                    />
-                  }
+              </Stack>
+              <Flex justifyContent="center" alignItems="center">
+                <ButtonGroup
+                  spacing={4}
+                  alignItems="center"
+                  justifyContent="center"
                 >
-                  View demo
-                </ButtonLink>
-              </ButtonGroup>
+                  <ButtonLink colorScheme="primary" size="lg" href="/signup">
+                    Sign Up
+                  </ButtonLink>
+                  <ButtonLink
+                    size="lg"
+                    href="https://demo.saas-ui.dev"
+                    variant="outline"
+                    rightIcon={
+                      <Icon
+                        as={FiArrowRight}
+                        sx={{
+                          transitionProperty: "common",
+                          transitionDuration: "normal",
+                          ".chakra-button:hover &": {
+                            transform: "translate(5px)",
+                          },
+                        }}
+                      />
+                    }
+                  >
+                    View demo
+                  </ButtonLink>
+                </ButtonGroup>
+              </Flex>
             </FallInPlace>
           </Hero>
 
@@ -324,7 +331,7 @@ const FeaturesSection = () => {
         <Heading
           lineHeight="short"
           fontSize={["2xl", null, "4xl"]}
-          textAlign="left"
+          textAlign="center"
           as="p"
         >
           Not your standard
